@@ -1,0 +1,20 @@
+# command 
+# docker-compose build --no-cache
+# docker-compose up -d
+
+FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-devel
+
+ENV TZ=Asia/Tokyo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# input your GPG key(comment out this line, then get error message with your key)
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys *****
+
+RUN apt update
+RUN apt-get install -y vim less
+RUN apt-get install -y libsndfile1-dev
+
+RUN pip install --upgrade pip
+RUN pip install magenta --no-cache-dir
+# for markupsafe
+RUN pip install Flask 
