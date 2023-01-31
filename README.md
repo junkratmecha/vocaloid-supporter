@@ -11,13 +11,16 @@
 ## VOICE → NEUTRINO(AI Vocaloid)
 - 【AI】No.7 - Seven
     * No voice adjustment work
-    * include code for online neutrino soon
+    * online code for neutrino will be uploaded soon
 
-## Lyrics
+## Lyrics → (GPT2 fine-tuning)
+- 【AI】GPT-2 fine-tuned generating
+- (the beginnings of classic Japanese literary masterpieces)
 
 ## Images
-- 【AI】Stable diffusion
-    * include code for online diffuser soon
+- 【AI】Use some diffusion
+    * novelAI prompt
+    * diffuser code will be uploaded soon
 
 ## Movie
 - 【Human/Manual】Filmora
